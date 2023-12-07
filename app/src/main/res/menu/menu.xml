@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/savedNewsFrag"
+        android:icon="@drawable/ic_favorite"
+        android:title="@string/saved_news"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/searchNews"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search_news"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/deleteAll"
+        android:icon="@drawable/delete"
+        android:title="@string/delete_news"
+        app:showAsAction="always" />
+
+</menu>
