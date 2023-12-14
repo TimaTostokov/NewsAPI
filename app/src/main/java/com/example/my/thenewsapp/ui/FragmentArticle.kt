@@ -26,14 +26,14 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 class FragmentArticle : Fragment() {
 
     private lateinit var viewModel: NewsViewModel
-    private lateinit var args: FragmentArticleArgs
+    private lateinit var args: FragmentArgument
 
     private var stringCheck = ""
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         return inflater.inflate(R.layout.fragment_article, container, false)
     }
 
@@ -47,7 +47,6 @@ class FragmentArticle : Fragment() {
         val factory = NewsViewModelFac(repository, requireActivity().application)
 
         viewModel = ViewModelProvider(this, factory)[NewsViewModel::class.java]
-        args = FragmentArticleArgs.fromBundle(requireArguments())
 
         val fab = view.findViewById<FloatingActionButton>(R.id.fab)
         val textTitle: TextView = view.findViewById(R.id.tvTitle)

@@ -14,7 +14,7 @@ import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import com.example.my.thenewsapp.ui.FragmentArticle
-
+//ОТПЕЧАТОК ПАЛЬЦА!!!!!!!!
 class MainActivity : AppCompatActivity() {
 
     private var cancellationSignal: CancellationSignal? = null

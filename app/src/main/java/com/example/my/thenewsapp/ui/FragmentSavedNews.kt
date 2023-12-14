@@ -42,7 +42,7 @@ class FragmentSavedNews : Fragment(), MenuProvider {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        (activity as AppCompatActivity).supportActionBar?.setTitle("Saved News")
+        (activity as AppCompatActivity).supportActionBar?.title = "Saved News"
 
         val menuHost: MenuHost = requireActivity()
         menuHost.addMenuProvider(this, viewLifecycleOwner, Lifecycle.State.CREATED)
